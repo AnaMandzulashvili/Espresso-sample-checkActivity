@@ -32,7 +32,7 @@ import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.LargeTest
-import androidx.test.runner.AndroidJUnit4
+
 import com.example.android.testing.espresso.BasicSample.Helper.getText
 import com.example.android.testing.espresso.BasicSample.Helper.tap
 import com.example.android.testing.espresso.BasicSample.Helper.typeText
@@ -54,7 +54,7 @@ import org.junit.runner.RunWith
  *
  * Note that there is no need to tell Espresso that a view is in a different [Activity].
  */
-@RunWith(AndroidJUnit4::class)
+@RunWith(androidx.test.ext.junit.runners.AndroidJUnit4::class)
 @LargeTest
 class ChangeTextBehaviorKtTest {
 
