@@ -591,6 +591,10 @@ open class UltronRecyclerView(
             }
         }
     }
+
+    fun getItem(hasDescendant: BySelector?) {
+
+    }
 }
 
 fun withRecyclerView(

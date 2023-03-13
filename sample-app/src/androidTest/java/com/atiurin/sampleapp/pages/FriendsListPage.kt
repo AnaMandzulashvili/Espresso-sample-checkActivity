@@ -39,7 +39,7 @@ object FriendsListPage : Page<FriendsListPage>() {
         return recycler.getItem(hasDescendant(allOf(withId(R.id.tv_name), withText(contactName))))
     }
 
-    fun getListItem(positions: Int): FriendRecyclerItem {
+    fun getListItem(positions: Int) {
         return recycler.getItem(positions)
     }
 
