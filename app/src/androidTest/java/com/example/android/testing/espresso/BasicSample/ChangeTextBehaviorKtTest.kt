@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+@file:Suppress("DEPRECATION")
+
 package com.example.android.testing.espresso.BasicSample
 
 import androidx.test.ext.junit.rules.activityScenarioRule
