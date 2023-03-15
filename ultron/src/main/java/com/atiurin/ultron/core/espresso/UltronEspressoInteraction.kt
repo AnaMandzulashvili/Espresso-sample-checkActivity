@@ -26,6 +26,7 @@ import com.atiurin.ultron.extensions.getDataMatcher
 import com.atiurin.ultron.extensions.getRootMatcher
 import com.atiurin.ultron.extensions.getViewMatcher
 import com.atiurin.ultron.listeners.setListenersState
+import org.hamcrest.Description
 import org.hamcrest.Matcher
 import org.hamcrest.Matchers
 
@@ -35,7 +36,7 @@ class UltronEspressoInteraction<T>(
     val timeoutMs: Long? = null,
     val resultHandler: ((EspressoOperationResult<UltronEspressoOperation>) -> Unit)? = null,
     val assertion: OperationAssertion = EmptyOperationAssertion()
-) {
+) : Matcher<View> {
     init {
         if (interaction !is ViewInteraction && interaction !is DataInteraction) throw UltronException(
             "Invalid interaction class provided ${interaction.className()}. Use ViewInteraction or DataInteraction"
@@ -609,6 +610,13 @@ class UltronEspressoInteraction<T>(
         type: UltronOperationType = CommonOperationType.DEFAULT,
         description: String
     ) = executeAssertion(getUltronEspressoAssertionOperation(operationBlock, name, type, description))
-    
+
     internal fun T.className() = this?.let { it::class.java.simpleName }
+    override fun describeTo(description: Description?) {
+        TODO("Not yet implemented")
+    }
+
+    override fun matches(actual: Any?): Boolean {
+        TODO("Not yet implemented")
+    }
 }

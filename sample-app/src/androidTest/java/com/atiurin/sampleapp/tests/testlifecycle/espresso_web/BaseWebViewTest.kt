@@ -1,4 +1,4 @@
-package com.atiurin.sampleapp.tests.espresso_web
+package com.atiurin.sampleapp.tests.testlifecycle.espresso_web
 
 import androidx.test.core.app.ActivityScenario
 import com.atiurin.sampleapp.activity.WebViewActivity

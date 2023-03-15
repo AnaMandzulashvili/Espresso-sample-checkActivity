@@ -1,4 +1,4 @@
-package com.atiurin.sampleapp.tests.espresso_web
+package com.atiurin.sampleapp.tests.testlifecycle.espresso_web
 
 import androidx.test.espresso.web.assertion.WebViewAssertions.webMatches
 import androidx.test.espresso.web.webdriver.DriverAtoms.getText

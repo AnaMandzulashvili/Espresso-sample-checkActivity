@@ -1,4 +1,4 @@
-package com.atiurin.sampleapp.tests.espresso_web
+package com.atiurin.sampleapp.tests.testlifecycle.espresso_web
 
 import com.atiurin.sampleapp.framework.Log
 import com.atiurin.ultron.core.espressoweb.webelement.UltronWebElements.Companion.classNames
